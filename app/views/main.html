@@ -1,0 +1,32 @@
+<div class="container">
+	    <form role="forl" id="rootwizard" class="form-wizard" novalidate>
+	        <ul class="tabs">
+	            <li class="active">
+	                <a data-toggle="tab" ng-click="main.gotoStep(1)" href="">{{main.steps[0].name}}</a>
+	            </li>
+	            <li>
+	                <a data-toggle="tab" ng-click="main.gotoStep(2)" href="">{{main.steps[1].name}}</a>
+	            </li>
+	            <li>
+	                <a data-toggle="tab" ng-click="main.gotoStep(3)" href="">{{main.steps[2].name}}</a>
+	            </li>
+	            <li>
+	                <a data-toggle="tab" ng-click="main.gotoStep(4)" href="">{{main.steps[3].name}}</a>
+	            </li>
+	            <li>
+	                <a data-toggle="tab" ng-click="main.gotoStep(5)" href="">{{main.steps[4].name}}</a>
+	            </li>
+	            <li>
+	                <a data-toggle="tab" ng-click="main.gotoStep(6)" href="">{{main.steps[5].name}}</a>
+	            </li>
+	        </ul>
+	        
+	        <div class="progress-indicator">
+	            <span></span>
+	        </div>
+
+	        <div class="tab-content no-margin">
+	        	<div ng-include="'/views/identificacao.html'"></div>
+	        </div>
+	    </form>
+</div>
